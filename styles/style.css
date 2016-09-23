@@ -1,4 +1,7 @@
-
+.clear{
+    clear:both;
+    display:inline-block;
+}
 
 /*dashboard styles*/
 
