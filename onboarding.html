@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<style type="text/css">
+.alignment {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.outline {
+    border: 1px solid black;
+}
+</style>
+
+<body>
+    <div id="screen1" class="">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 alignment">
+                <h1> Hey Lisa, </h1>
+                <h3> Here is your financial picture </h3>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-xs-3 col-xs-offset-1 outline">
+                <h3> Available Funds</h3>
+                <h4> $2500 </h4>
+            </div>
+            <div class="col-xs-3 col-xs-offset-1 outline">
+                <h3> Credit Card Debt </h3>
+                <h4> $1800 at 19% interest </h4>
+            </div>
+            <div class="col-xs-3 col-xs-offset-1 outline">
+                <h3> Superannuation </h3>
+                <h4> 20K in 3 managed funds </h4>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 alignment">
+                <h3> If this looks right, let me work <br>
+                 out how you can make the most
+                of your money. </h3>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 alignment">
+                <button class="btn btn-default btn-lg alignment" id="next">
+                    next
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="screen2" class="hide">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 alignment">
+                <h1> Based on your financial picture, here’s what you can manage. I can do to help behind the scenes. You can uncheck any of these and change anytime!  </h1>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-xs-3 col-xs-offset-1">
+                <input id="goalCheck1" type="checkbox" /> pay your credit card off by $200 per month. this will save you $400 in interest cost over 2 years.
+            </div>
+            <div class="col-xs-3 col-xs-offset-1">
+                <input id="goalCheck1" type="checkbox" /> Save $150 each month for a rainy day or a holiday
+            </div>
+            <div class="col-xs-3 col-xs-offset-1">
+                <input id="goalCheck1" type="checkbox" /> Round up your purchases on your debit card to the nearest dollar & save it for you
+            </div>
+        </div>
+
+          <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 alignment">
+                <button class="btn btn-default btn-lg alignment" id="next2">
+                    next
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="screen3" class="hide">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 alignment">
+                <h1> I’ve also found some better places to put your money based on your picture.
+I’m completely independent - I’ll never suggest any products that’s not in your best interests! </h1>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-xs-3 col-xs-offset-1">
+                <input id="goalCheck1" type="checkbox" />  A low rate credit card from ABC Bank with a 0% balance transfer for 6 months. This could save you $800 over six months.
+            </div>
+            <div class="col-xs-3 col-xs-offset-1">
+                <input id="goalCheck1" type="checkbox" /> Consolidate your super and put it into a low-fee fund, reducing your fees by 60%
+            </div>
+            <div class="col-xs-3 col-xs-offset-1">
+                <input id="goalCheck1" type="checkbox" /> Invest your savings into a 3% interest earning account
+            </div>
+        </div>
+
+          <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 alignment">
+                <button class="btn btn-default btn-lg alignment" id="">
+                    finish !
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+
+$(document).ready(function() {
+    $("#next").on("click", function() {
+        $("#screen1").hide();
+        $("#screen2").removeClass("hide");
+        console.log("yes");
+    });
+
+     $("#next2").on("click", function() {
+        $("#screen2").hide();
+        $("#screen1").hide();
+        $("#screen3").removeClass("hide");
+        console.log("wooo");
+    });
+});
+
+</script>
+
+</html>
