@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     $(".noShow").hide();
 
-
+// $("#goalsModal").modal("show");
 
 /*Dashboard*/
   $("[data-toggle=popover]").popover({
@@ -24,7 +24,7 @@ $(document).ready(function(){
     $('#goalCheck2').attr('checked', false); 
     $('#goalCheck3').attr('checked', false); 
 
-    $("#goalCheck1").click(function(){
+   /* $("#goalCheck1").click(function(){
         $(".noGoals").hide();
         $(".goalsSet").show();
         $("#goal1").toggle();
@@ -40,5 +40,5 @@ $(document).ready(function(){
         $(".noGoals").hide();
         $(".goalsSet").show();
         $("#goal3").toggle();
-    });
+    }); */
 });

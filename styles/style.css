@@ -18,7 +18,7 @@ h2,h3,h4,u{
 .goalAlertIcon{
     position: absolute;
     font-size: 25px;
-    margin-left: 155px;
+    margin-left: 135px;
   margin-top:-15px;
     color:#2eec71;
     cursor:pointer;
@@ -29,12 +29,13 @@ h2,h3,h4,u{
 }
 
 #goal1,#goal2,#goal3{
-    height:220px;
+    height:130px;
     text-align: center;
 }
 
 #goal1 h4,#goal2 h4,#goal3 h4{
-    height:50px;
+    height:30px;
+    font-size: 15px;
 }
 
 #goal1 img,#goal2 img,#goal3 img{
