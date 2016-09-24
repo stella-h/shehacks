@@ -12,6 +12,14 @@ $(document).ready(function(){
         }
     });
 
+     $("[data-toggle=goalAlert3]").popover({
+        html : true, 
+        content: function() {
+          return $("#goalAlertSuggest").html();
+        }
+    });
+
+
     $('#goalCheck1').attr('checked', false); 
     $('#goalCheck2').attr('checked', false); 
     $('#goalCheck3').attr('checked', false); 
