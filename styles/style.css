@@ -33,17 +33,25 @@ h2,h3{
 #acctInfo{
 
     background-color: #fff;
-    line-height: 2;
-    font-size: 16px;
+    color:#333;
+    line-height: 2.5;
+    font-size: 25px;
+   /* border:solid 2px #fff;*/
 }
-
+#acctInfo p{
+    text-align:center;
+    font-size: 35px;
+}
+li,ul{
+    list-style: none;
+}
 .goalAlertIcon{
     position: absolute;
     font-size: 25px;
     margin-left: 135px;
   margin-top:-15px;
     cursor:pointer;
-    color:#e74c3c;
+    color:#fff;
 }
 
 #goalsModal{
@@ -53,9 +61,10 @@ h2,h3{
 #goal1,#goal2,#goal3{
     height:130px;
     text-align: center;
+    color:#fff;
 }
 #goal1,#goal2{
-    background-color:#fff;
+    background-color:#34495e;
 }
 #goal1{
     margin-left:33px;
@@ -65,15 +74,16 @@ h2,h3{
     margin-left:105px;
 }
 #goal3{
-    background-color:#fff;
+    background-color:#16a085;
     margin-left:105px;
 }
 
 #goal1 h4,#goal2 h4,#goal3 h4{
     height:30px;
     font-size: 15px;
-    color:#e74c3c;
+    color:#fff;
     font-weight:bold;
+    letter-spacing: 1px;
 }
 
 #goal1 img,#goal2 img,#goal3 img{
