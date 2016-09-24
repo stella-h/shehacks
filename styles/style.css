@@ -3,91 +3,81 @@
     display:inline-block;
 }
 
+body{
+
+    font-family: 'Catamaran', sans-serif;
+}
+h2,h3,h4,u{
+
+    font-family: 'Catamaran', sans-serif;
+    color:#fff;
+}
+u{
+    color:#3a9bdc;
+}
+body{
+
+    background-color: #3a9bdc;
+}
+h2,h3{
+
+
+}
 /*dashboard styles*/
 
 .info-box{
-    border:solid 1px;
     margin-bottom:5px;
+    border-radius: 10px;
+}
+
+#acctInfo{
+
+    background-color: #fff;
+    line-height: 2;
+    font-size: 16px;
+}
+
+.goalAlertIcon{
+    position: absolute;
+    font-size: 25px;
+    margin-left: 135px;
+  margin-top:-15px;
+    cursor:pointer;
+    color:#e74c3c;
 }
 
 #goalsModal{
     background-color:#fff;
 }
 
-
-/* login form styles */
-
-/* Bordered form */
-form {
-    border: 3px solid #f1f1f1;
-}
-
-/* Full-width inputs */
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-/* Set a style for all buttons */
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
-
-/* Extra style for the cancel button (red) */
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
-
-/* Center the avatar image inside this container */
-.imgcontainer {
+#goal1,#goal2,#goal3{
+    height:130px;
     text-align: center;
-    margin: 24px 0 12px 0;
+}
+#goal1,#goal2{
+    background-color:#fff;
+}
+#goal1{
+    margin-left:33px;
 }
 
-/* Avatar image */
-img.avatar {
-    width: 20%;
-    border-radius: 50%;
+#goal2{
+    margin-left:105px;
+}
+#goal3{
+    background-color:#fff;
+    margin-left:105px;
 }
 
-/* Add padding to containers */
-.container {
-    padding: 16px;
+#goal1 h4,#goal2 h4,#goal3 h4{
+    height:30px;
+    font-size: 15px;
+    color:#e74c3c;
+    font-weight:bold;
 }
 
-.logincontainer {
-    width:60%;
-    padding:16px;
-    border_radius: 50%;
-    margin: 0 auto;
+#goal1 img,#goal2 img,#goal3 img{
+    margin-left:auto;
+    margin-right:auto;
 
-}
-
-/* The "Forgot password" text */
-span.psw {
-    float: right;
-    padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-        display: block;
-        float: none;
-    }
-    .cancelbtn {
-        width: 100%;
-    }
 }
