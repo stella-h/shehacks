@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title> </title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css"/>
 </head>
@@ -22,9 +24,9 @@
     <!-- Start Dashboard -->
     <div class="container" id="dashboard">
        <!-- header row -->
-        <div class="row">
+        <div class="row" style="margin-top:20px;">
             <div class="col-xs-9 col-xs-offset-1">
-                <span class="btn btn-default" type="button" data-toggle="modal" data-target="#goalsModal">Goals</span>
+                <span class="btn btn-default hide" type="button" data-toggle="modal" data-target="#goalsModal">Goals</span>
             </div>
             <div class="col-xs-2">
                 <span  data-toggle="popover" title="" data-placement="bottom" >
@@ -41,43 +43,61 @@
         <!-- end header row -->
         <!-- start info row one -->
         <div class="row">
-            <div class="col-xs-10 col-xs-offset-1 info-box">
-                <h3>Scheduled Transactions</h3>
-                <p>
-                    <u>$100</u> from <u> Account ABC</u> To <u>Account XYZ</u> on the <u> 24th October</u>
-                </p>
+            <div class="col-xs-10 col-xs-offset-1 ">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <img src="images/ally.png" height="200px" alt="Ally Your Financial buttler"/>
+                    </div>
+                    <div class="col-xs-10 info-box" style="height:185px; padding-top:15px;">
+                        <p>Hi <b>Lisa</b></p>
+                        <ul>
+                            <li>
+                                I'm going to pay <u>$200</u> off your credit card on <u>Thursday</u> this week.
+                            </li>
+
+                            <li>
+                                You've saved <u>$120</u> this week <b>Awesome!</b>'
+                            </li>
+
+                            <li>
+                                <em>You're on track to save <u>$5000</u> this year</em>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
             </div>
 
-  <div class="col-xs-10 col-xs-offset-1 info-box">
-                <h3>Current Targets</h3>
-                <p class="noGoals">Set some goals to see how you...</p>
-                <p class="noShow goalsSet">
-             Your goals are right on track
-                </p>
-            </div>
-  <div class="col-xs-10 col-xs-offset-1 info-box">
-                <h3>Current Goals</h3>
+
+  <div class="col-xs-10 col-xs-offset-1 ">
+                <h3  style="margin-left:20px;">Current Goals</h3>
 
                 <div class="row">
-                <div class="col-xs-12">
-                 <p class="noGoals">You have no goals</p>
-                </div>
-                <div id="goal1" class="col-xs-3 noShow ">
-                    <h2>Goal 1</h2>
-                <img src="images/smiley-1635449_640.png" width="100px">
+               <!-- <div class="col-xs-12">
+                 <p class="noGoals" style="margin-left:20px;">You have no goals</p>
+                </div>-->
+                <div id="goal1" class="col-xs-3 col-xs-offset-1 info-box">
+                    <h4>Pay off your credit card</h4>
+                <img src="images/smiley-1635449_640.png" width="50px">
                <div id="goalChart1"></div>
                 </div>
 
-                <div id="goal2" class="col-xs-3 col-xs-offset-1 noShow">
-                    <h2>Goal 2</h2>
-                <img src="images/smiley-1635450_640.png" width="100px">
+                <div id="goal2" class="col-xs-3 col-xs-offset-1 info-box">
+                    <h4>Save for a holiday</h4>
+                <img src="images/smiley-1635456_640.png" width="50px">
                
                 </div>
-                <div id="goal3" class="col-xs-3 col-xs-offset-1 noShow ">
-                    <h2>Goal 3</h2>
-                <img  src="images/smiley-1635456_640.png" width="100px">
+                <div id="goal3" class="col-xs-3 col-xs-offset-1 info-box">
+                    <h4>Invest savings</h4>
+                  <span id="goalAlert3" data-toggle="goalAlert3"  class="glyphicon glyphicon-info-sign goalAlertIcon"></span>
+                <img  src="images/smiley-1635450_640.png" width="50px">
                 
                 </div>
+                 <div id="goalAlertSuggest"  class="hidden">
+                    <p>I have a new suggestion for you. Find out more <u>here!</u></p>
+                </div>
+
                 </div>
             </div>
 
